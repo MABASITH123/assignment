@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Digital;
+    src: url('fonts/Digital.ttf');
+}
+
+@font-face {
+    font-family: Arcade;
+    src: url('fonts/Arcade.TTF');
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(37, 21, 0), black) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+}
+
+.output-container {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+    border-top: 4px solid rgb(116, 116, 116);
+    position: absolute;
+    height: 70px;
+    width: 100px;
+    background-color: rgb(31, 31, 31);
+    z-index: -1;
+}
+
+.output-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: Digital, sans-serif;
+    text-shadow: 0 0 5px rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
+    border-radius: 4px;
+    background-color: black;
+    height: 40px;
+    width: 70px;
+}
+
+.text-field-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-fields {
+    margin: 0 5px;
+    font-family: Digital, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(207, 207, 207);
+    border: 1px solid grey;
+    background-color: black;
+    outline: none;
+    text-shadow: 0 0 5px rgb(207, 207, 207);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.text-fields::selection {
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-bottom: 5px solid rgb(138, 90, 2);
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: Arcade, monospace;
+    margin-top: 14px;
+    width: 150px;
+    height: 35px;
+}
+
+.buttons:active {
+    transform: scale(0.98);
+}
+
+.slide-up-animation {
+    animation: slide-up 0.3s ease;
+}
+
+.slide-down-animation {
+    animation: slide-down 0.3s ease;
+}
+
+@keyframes slide-up {
+    to{transform: translateY(-95%);}
+}
+
+@keyframes slide-down {
+    to{transform: translateY(0%);}
+}

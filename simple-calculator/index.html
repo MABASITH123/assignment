@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="output-container">
+            <div class="output-display"></div>
+        </div>
+        
+        <div class="text-field-container">
+            <input type="text" class="text-fields" maxlength="2" id="text-field1">
+            <input type="text" class="text-fields" maxlength="2" id="text-field2">
+        </div>
+
+        <div class="btn-container">
+            <button class="buttons" onclick="calculate('+')">ADD</button>
+            <button class="buttons" onclick="calculate('-')">SUBSTRACT</button>
+            <button class="buttons" onclick="calculate('*')">MULTIPLY</button>
+            <button class="buttons" onclick="calculate('/')">DIVIDE</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
